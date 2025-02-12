@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="under">
+
+            <h2>Math Quiz</h2>
+            
+            <div class="difficulty">
+                <button onclick="setDifficulty('easy')">Easy</button>
+                <button onclick="setDifficulty('medium')">Medium</button>
+                <button onclick="setDifficulty('hard')">Hard</button>
+            </div>
+            
+            <div class="question">Question</div>
+            <div class="option">
+                <input type="radio" id="opt1" name="option"><label for="opt1">Option1</label><br>
+                <input type="radio" id="opt2" name="option"><label for="opt2">Option2</label><br>
+                <input type="radio" id="opt3" name="option"><label for="opt3">Option3</label><br>
+                <input type="radio" id="opt4" name="option"><label for="opt4">Option4</label>
+            </div>
+            
+            <p class="timer">Timer: 10 seconds</p>
+            <p class="points-display">Points: 0</p>
+            <input type="button" value="Submit" onclick="checkAnswer()" id="button">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
